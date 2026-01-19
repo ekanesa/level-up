@@ -7,7 +7,9 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    serverComponentsExternalPackages: ['better-sqlite3'],
+    // This tells Next.js to not bundle this package, 
+    // keeping the binary file intact on Vercel.
+    serverComponentsExternalPackages: ['better-sqlite3'], 
   },
 }
 
