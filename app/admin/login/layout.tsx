@@ -1,0 +1,9 @@
+import type React from "react"
+export default function LoginLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  // Login page has its own layout without the admin sidebar
+  return <>{children}</>
+}
