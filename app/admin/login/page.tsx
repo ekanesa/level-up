@@ -2,6 +2,8 @@ import { getCurrentUser } from "@/lib/auth"
 import { redirect } from "next/navigation"
 import { LoginForm } from "@/components/admin/login-form"
 
+export const dynamic = "force-dynamic"
+
 export const metadata = {
   title: "Admin Login | Level Up Bali",
   description: "Sign in to the admin dashboard",
